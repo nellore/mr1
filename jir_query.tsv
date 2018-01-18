@@ -1,0 +1,4 @@
+region	contains	filters	group
+chr1;181050287-181052234	1	strand=+	MR1:NM_001531
+chr1;181052511-181053572	1	strand=+	MR1:NM_001531
+chr1;181050287-181053572	1	strand=+	MR1:NM_001195000

@@ -23,4 +23,8 @@ mysql -h genome-mysql.cse.ucsc.edu -A -u genome -D hg38 -e 'select * from refGen
 # Snaptron manual and use the command-line tool qs from commit
 # e1f039726799aad943af45985c289c1d4d900d15 of https://github.com/ChristopherWilks/snaptron-experiments
 # as follows.
-$QS --query-file $DIR/jir_query.tsv --function jir --datasrc gtex >ranked_gtex_output.tsv
+$QS --query-file $DIR/jir_query.tsv --function jir --datasrc gtex >gtex_output.tsv
+# Recompute JIR using normalized coverage values; this matters because the JIR Snaptron computes has a small
+# correction \epsilon in the denominator, and it needs to be in units of normalized coverage but is not
+# when JIR is computed using raw coverage as Snaptron does; use sed to dodge awk's sensitivity to %'s'
+sed 's/%/\x1d/g' gtex_output.tsv | awk -F "\t" 'NR == 1 {$2 = "MR1:NM_001195000 normalized count"; $3 = "MR1:NM_001531 normalized count"; for (i=1; i<NF; i++) {printf $i "\t"}; print $NF} NR > 1 {$2 = $2 / $312 * 4000000000; $3 = $3 / $312 * 4000000000; $1 = ($3 - $2) / ($3 + $2 + 1); for (i=1; i<NF; i++) {printf $i "\t"}; print $NF}' | sed 's/\x1d/%/g' | sort -k1,1g >ranked_gtex_output.tsv

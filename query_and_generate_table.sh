@@ -28,3 +28,6 @@ $QS --query-file $DIR/jir_query.tsv --function jir --datasrc gtex >gtex_output.t
 # correction \epsilon in the denominator, and it needs to be in units of normalized coverage but is not
 # when JIR is computed using raw coverage as Snaptron does; use sed to dodge awk's sensitivity to %'s'
 sed 's/%/\x1d/g' gtex_output.tsv | awk -F "\t" 'NR == 1 {$2 = "MR1:NM_001195000 normalized count"; $3 = "MR1:NM_001531 normalized count"; for (i=1; i<NF; i++) {printf $i "\t"}; print $NF} NR > 1 {$2 = $2 / $312 * 4000000000; $3 = $3 / $312 * 4000000000; $1 = ($3 - $2) / ($3 + $2 + 1); for (i=1; i<NF; i++) {printf $i "\t"}; print $NF}' | sed 's/\x1d/%/g' | sort -k1,1g >ranked_gtex_output.tsv
+# Generate table of isoform ratios and tissues; filter so summed normalized coverage of distinguishing junctions is >= 5
+# We approximate isoform ratio as the ratio of coverage per distinguishing junction between the two isoforms
+awk -F "\t" 'NR == 1 {print "SRA run accession number\ttissue\tMR1:NM_001195000 normalized count\tMR1:NM_001531 normalized count\tNM_001531:NM_001195000 ratio"} NR > 1 and ($2 + $3 >= 5) {if($2 == 0) {ratio = "infinity"} else {ratio = $3/$2/2} print $5 "\t" $51 "\t" $2 "\t" $3 "\t" ratio}' ranked_gtex_output.tsv >isoform_ratio_table.tsv

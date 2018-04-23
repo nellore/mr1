@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1528256,      32553]
-NotebookOptionsPosition[   1526607,      32492]
-NotebookOutlinePosition[   1526967,      32508]
-CellTagsIndexPosition[   1526924,      32505]
+NotebookDataLength[   1525659,      32480]
+NotebookOptionsPosition[   1524123,      32423]
+NotebookOutlinePosition[   1524483,      32439]
+CellTagsIndexPosition[   1524440,      32436]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38,7 +38,8 @@ Cell[BoxData[{
 
 Cell[BoxData["\<\"/Users/verve/mr1\"\>"], "Output",
  CellChangeTimes->{{3.733503848922127*^9, 3.7335038993912363`*^9}, 
-   3.7335054012378187`*^9, 3.733506038391048*^9, 3.733506771753055*^9}],
+   3.7335054012378187`*^9, 3.733506038391048*^9, 3.733506771753055*^9, 
+   3.7335130853739023`*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -83,15 +84,7 @@ Cell[BoxData[
             
             RowBox[{"\<\"SRR1340598\"\>", ",", "\<\"Ovary\"\>", ",", 
              "18.2956`", ",", "0", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            
-            RowBox[{"\<\"SRR1360194\"\>", ",", "\<\"Colon\"\>", ",", 
-             "17.263`", ",", "0", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            
-            RowBox[{"\<\"SRR661373\"\>", ",", "\<\"Skin\"\>", ",", "15.1959`",
-              ",", "0", ",", "0"}], "}"}], ",", 
-           TemplateBox[{"9383"},
+           TemplateBox[{"9388"},
             "OutputSizeLimit`Skeleton",
             DisplayFunction->(FrameBox[
               RowBox[{"\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}],
@@ -101,18 +94,6 @@ Cell[BoxData[
                 ShowStringCharacters -> False}, BaselinePosition -> Baseline, 
               ContentPadding -> False, FrameMargins -> 1, FrameStyle -> 
               GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
-           RowBox[{"{", 
-            
-            RowBox[{"\<\"SRR1312428\"\>", ",", "\<\"Brain\"\>", ",", 
-             "5.16378`", ",", "5.16378`", ",", "0.5`"}], "}"}], ",", 
-           RowBox[{"{", 
-            
-            RowBox[{"\<\"SRR658331\"\>", ",", "\<\"Heart\"\>", ",", 
-             "5.34632`", ",", "5.34632`", ",", "0.5`"}], "}"}], ",", 
-           RowBox[{"{", 
-            
-            RowBox[{"\<\"SRR1315371\"\>", ",", "\<\"Brain\"\>", ",", 
-             "5.37934`", ",", "5.37934`", ",", "0.5`"}], "}"}], ",", 
            RowBox[{"{", 
             
             RowBox[{"\<\"SRR627449\"\>", ",", "\<\"Brain\"\>", ",", 
@@ -194,7 +175,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 102, 19173145069173138292, 5/2],
+            Identity, 2, 19178892349142752562, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -224,7 +205,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 102, 19173145069173138292, 5 2],
+            Identity, 2, 19178892349142752562, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -254,7 +235,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 102, 19173145069173138292, Infinity],
+            Identity, 2, 19178892349142752562, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -273,8 +254,7 @@ Cell[BoxData[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{74., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
               DynamicUpdating->True], "SuggestionsBarControlActive",
              StripOnInput->False]}, Dynamic[
@@ -322,9 +302,10 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[102]]], "Output",
+  Out[2]]], "Output",
  CellChangeTimes->{{3.733503848922127*^9, 3.7335038993912363`*^9}, 
-   3.7335054012378187`*^9, 3.733506038391048*^9, 3.733506772001017*^9}]
+   3.7335054012378187`*^9, 3.733506038391048*^9, 3.733506771753055*^9, 
+   3.73351308573409*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -362,7 +343,7 @@ Cell[BoxData[
    ",", "\<\"Bone Marrow\"\>"}], "}"}]], "Output",
  CellChangeTimes->{{3.733503961415347*^9, 3.733503981039715*^9}, {
    3.733504283637261*^9, 3.733504291357963*^9}, 3.733505403442604*^9, 
-   3.733506041935656*^9, 3.733506774265766*^9}]
+   3.733506041935656*^9, 3.733506774265766*^9, 3.7335130859554462`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -431,60 +412,7 @@ Cell[BoxData[
   RotationBox["#1",
    BoxRotation->1.2217304763960306`], "&"}]], "Output",
  CellChangeTimes->{{3.7335058840652246`*^9, 3.733505928029524*^9}, 
-   3.733506047260297*^9, 3.733506780019431*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"ColorData", "[", "\"\<ThermometerColors\>\"", "]"}], "[", "1", 
-  "]"}]], "Input",
- CellChangeTimes->{{3.733507597226027*^9, 3.733507630560063*^9}}],
-
-Cell[BoxData[
- InterpretationBox[
-  ButtonBox[
-   TooltipBox[
-    GraphicsBox[{
-      {GrayLevel[0], RectangleBox[{0, 0}]}, 
-      {GrayLevel[0], RectangleBox[{1, -1}]}, 
-      {RGBColor[0.534081, 0.0853132, 0.16669], RectangleBox[{0, -1}, {2, 1}]}},
-     AspectRatio->1,
-     Frame->True,
-     FrameStyle->RGBColor[
-      0.35605400000000004`, 0.05687546666666667, 0.11112666666666668`],
-     FrameTicks->None,
-     ImageSize->
-      Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-        AbsoluteCurrentValue[Magnification]}],
-     PlotRangePadding->None],
-    "RGBColor[0.534081, 0.0853132, 0.16669]"],
-   Appearance->None,
-   BaseStyle->{},
-   BaselinePosition->Baseline,
-   ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
-     If[
-      Not[
-       AbsoluteCurrentValue["Deployed"]], 
-      SelectionMove[Typeset`box$, All, Expression]; 
-      FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-      FrontEnd`Private`$ColorSelectorInitialColor = 
-       RGBColor[0.534081, 0.0853132, 0.16669]; 
-      FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-      MathLink`CallFrontEnd[
-        FrontEnd`AttachCell[Typeset`box$, 
-         FrontEndResource["RGBColorValueSelector"], {0, {Left, Bottom}}, {
-         Left, Top}, 
-         "ClosingActions" -> {
-          "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
-   DefaultBaseStyle->{},
-   Evaluator->Automatic,
-   Method->"Preemptive"],
-  RGBColor[0.534081, 0.0853132, 0.16669],
-  Editable->False,
-  Selectable->False]], "Output",
- CellChangeTimes->{{3.733507616668826*^9, 3.7335076309973307`*^9}}]
+   3.733506047260297*^9, 3.733506780019431*^9, 3.733513086459318*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -506,7 +434,8 @@ Cell[BoxData[
    "0.222223`", ",", "0.227273`", ",", "0.230769`", ",", "0.234042`", ",", 
    "0.23548550000000001`", ",", "0.25521099999999997`", ",", "0.260563`"}], 
   "}"}]], "Output",
- CellChangeTimes->{{3.733507678300271*^9, 3.733507703767898*^9}}]
+ CellChangeTimes->{{3.733507678300271*^9, 3.733507703767898*^9}, 
+   3.733513086573119*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -517,7 +446,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7335077055574636`*^9, 3.733507713784827*^9}}],
 
 Cell[BoxData["0.142857`"], "Output",
- CellChangeTimes->{3.733507714063469*^9}]
+ CellChangeTimes->{3.733507714063469*^9, 3.733513086689328*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -528,7 +457,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.7335077149097147`*^9, 3.7335077245108547`*^9}}],
 
 Cell[BoxData["0.260563`"], "Output",
- CellChangeTimes->{{3.7335077184646397`*^9, 3.733507725232607*^9}}]
+ CellChangeTimes->{{3.7335077184646397`*^9, 3.733507725232607*^9}, 
+   3.73351308680655*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -553,7 +483,7 @@ Cell[BoxData[
    FractionBox[
     RowBox[{"#1", "-", "lowerBound"}], 
     RowBox[{"upperBound", "-", "lowerBound"}]], "]"}], "&"}]], "Output",
- CellChangeTimes->{3.733508135449341*^9}]
+ CellChangeTimes->{3.733508135449341*^9, 3.733513087018306*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -889,7 +819,8 @@ Gv6UcncRUqd3Kqg6fMX/ACLRvrs=
              RowBox[{"0.132857`", ",", "0.260563`"}], "}"}]}], "}"}], ",", 
        RowBox[{"LegendLayout", "\[Rule]", "\"Row\""}], ",", 
        RowBox[{"LegendMargins", "\[Rule]", "0"}]}], "]"}]& )]], "Output",
- CellChangeTimes->{{3.733512084930015*^9, 3.733512137010962*^9}}]
+ CellChangeTimes->{{3.733512084930015*^9, 3.733512137010962*^9}, 
+   3.733513087215313*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -31150,8 +31081,8 @@ $CellContext`lowerBound)/($CellContext`upperBound - $CellContext`lowerBound)]& \
    3.7335115539959*^9, 3.733511562200325*^9}, 3.733511883795332*^9, {
    3.7335119176391907`*^9, 3.733512002442721*^9}, 3.7335120517950163`*^9, {
    3.733512087674018*^9, 3.7335121553707848`*^9}, {3.733512194590844*^9, 
-   3.733512324882739*^9}, 
-   3.7335128728927526`*^9},ImageCache->GraphicsData["CompressedBitmap", "\<\
+   3.733512324882739*^9}, 3.7335128728927526`*^9, 
+   3.7335130890300827`*^9},ImageCache->GraphicsData["CompressedBitmap", "\<\
 eJzsvXuwq9lVH6jpc+455z67+95+v06/227bDSaA8QO3+2G3wcDwmDBVMJOM
 w3CMwZaNHyKBCDITzVQFZQBhGAUi4kRhIqoYMURMBIkwFiAyI0AMCiCIAA0I
 EIgpuSJKzOgPVe3Za++11l7fp0/6Hue6uDb7VB1d3e98j/3tvdba6/lbX/7u
@@ -32487,7 +32418,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.733512884458374*^9, 3.733512906662032*^9}}],
 
 Cell[BoxData["\<\"histogramDensityPlot.pdf\"\>"], "Output",
- CellChangeTimes->{3.73351291117782*^9}]
+ CellChangeTimes->{3.733513093320875*^9}]
 }, Open  ]]
 },
 WindowSize->{1697, 1235},
@@ -32509,51 +32440,47 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 615, 14, 46, "Input"],
-Cell[1198, 38, 191, 2, 28, "Output"],
-Cell[1392, 42, 11430, 284, 159, "Output"]
+Cell[1198, 38, 219, 3, 28, "Output"],
+Cell[1420, 43, 10533, 264, 142, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12859, 331, 555, 14, 28, "Input"],
-Cell[13417, 347, 1059, 17, 46, "Output"]
+Cell[11990, 312, 555, 14, 28, "Input"],
+Cell[12548, 328, 1083, 17, 46, "Output"]
 }, Open  ]],
-Cell[14491, 367, 913, 24, 28, "Input"],
-Cell[15407, 393, 807, 23, 28, "Input"],
+Cell[13646, 348, 913, 24, 28, "Input"],
+Cell[14562, 374, 807, 23, 28, "Input"],
 Cell[CellGroupData[{
-Cell[16239, 420, 259, 6, 28, "Input"],
-Cell[16501, 428, 215, 5, 36, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[16753, 438, 183, 4, 28, "Input"],
-Cell[16939, 444, 1584, 42, 28, "Output"]
+Cell[15394, 401, 259, 6, 28, "Input"],
+Cell[15656, 409, 237, 5, 36, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18560, 491, 182, 3, 28, "Input"],
-Cell[18745, 496, 736, 12, 46, "Output"]
+Cell[15930, 419, 182, 3, 28, "Input"],
+Cell[16115, 424, 762, 13, 46, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19518, 513, 172, 3, 28, "Input"],
-Cell[19693, 518, 78, 1, 28, "Output"]
+Cell[16914, 442, 172, 3, 28, "Input"],
+Cell[17089, 447, 100, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19808, 524, 164, 3, 28, "Input"],
-Cell[19975, 529, 104, 1, 28, "Output"]
+Cell[17226, 453, 164, 3, 28, "Input"],
+Cell[17393, 458, 129, 2, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20116, 535, 412, 11, 28, "Input"],
-Cell[20531, 548, 276, 7, 50, "Output"]
+Cell[17559, 465, 412, 11, 28, "Input"],
+Cell[17974, 478, 298, 7, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20844, 560, 1262, 23, 28, "Input"],
-Cell[22109, 585, 14707, 306, 54, "Output"]
+Cell[18309, 490, 1262, 23, 28, "Input"],
+Cell[19574, 515, 14733, 307, 54, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36853, 896, 4432, 87, 114, "Input"],
-Cell[41288, 985, 1484954, 31491, 1015, 1403346, 30154, "CachedBoxData", \
+Cell[34344, 827, 4432, 87, 114, "Input"],
+Cell[38779, 916, 1484978, 31491, 1015, 1403346, 30154, "CachedBoxData", \
 "BoxData", "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1526279, 32481, 209, 5, 28, "Input"],
-Cell[1526491, 32488, 100, 1, 86, "Output"]
+Cell[1523794, 32412, 209, 5, 28, "Input"],
+Cell[1524006, 32419, 101, 1, 86, "Output"]
 }, Open  ]]
 }
 ]
